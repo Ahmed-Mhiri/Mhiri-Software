@@ -1,0 +1,430 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="MHIRI SOFTWARE | High-Performance Shopify App Engineering"
+  description="Specialized Shopify application engineering, resilient BullMQ queue infrastructure, and automated net margin auditing software."
+>
+  {/* Hero Section */}
+  <section class="max-w-6xl mx-auto px-6 pt-28 pb-16 relative">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-400 text-xs font-mono font-medium mb-8 backdrop-blur-md">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        Available for Bespoke Shopify App Engineering
+      </div>
+      
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.12]">
+        We build the apps that keep <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-white bg-clip-text text-transparent">Shopify stores profitable</span>.
+      </h1>
+
+      <p class="text-lg text-neutral-300 leading-relaxed mb-8 max-w-2xl font-normal">
+        From embedded App Bridge dashboards to high-throughput background queue workers, we architect fault-tolerant Shopify solutions designed for scale, zero merchant liability, and instant App Store approval.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4">
+        <a 
+          href="#interactive-demo" 
+          class="px-6 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-neutral-950 font-semibold text-sm transition-all shadow-lg shadow-emerald-500/20 hover:scale-[1.02] active:scale-[0.98]"
+        >
+          Explore Live Margin Simulator
+        </a>
+        <a 
+          href="#services" 
+          class="px-6 py-3 rounded-lg border border-neutral-800 bg-neutral-900/60 hover:bg-neutral-800 text-neutral-200 font-medium text-sm transition-all"
+        >
+          Engineering Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* Metrics / Signal Bar */}
+  <section class="max-w-6xl mx-auto px-6 py-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 border-y border-neutral-800/80 py-8">
+      <div class="flex flex-col">
+        <span class="text-2xl font-mono font-bold text-white tracking-tight flex items-center gap-1.5">
+          Dynamic Backoff
+        </span>
+        <span class="text-xs text-neutral-400 uppercase tracking-wider font-mono mt-1">Zero Rate-Limit Drops</span>
+      </div>
+      <div class="flex flex-col">
+        <span class="text-2xl font-mono font-bold text-emerald-400 tracking-tight">Zero-Liability</span>
+        <span class="text-xs text-neutral-400 uppercase tracking-wider font-mono mt-1">No Customer PII Retained</span>
+      </div>
+      <div class="flex flex-col">
+        <span class="text-2xl font-mono font-bold text-white tracking-tight">BullMQ + Redis</span>
+        <span class="text-xs text-neutral-400 uppercase tracking-wider font-mono mt-1">Asynchronous Job Pipeline</span>
+      </div>
+      <div class="flex flex-col">
+        <span class="text-2xl font-mono font-bold text-emerald-400 tracking-tight">100% Automated</span>
+        <span class="text-xs text-neutral-400 uppercase tracking-wider font-mono mt-1">GDPR & CCPA Webhook Purge</span>
+      </div>
+    </div>
+  </section>
+
+  {/* Flagship Product: ProfitGuard */}
+  <section id="interactive-demo" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+      <div>
+        <span class="text-xs font-mono uppercase text-emerald-400 tracking-widest font-semibold">Flagship Production Case Study</span>
+        <h2 class="text-3xl font-bold text-white tracking-tight mt-1">ProfitGuard for Shopify</h2>
+      </div>
+      <a 
+        href="https://profitguard.mhirisoftware.com" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="inline-flex items-center gap-2 text-sm text-neutral-300 hover:text-emerald-400 font-mono transition-colors group"
+      >
+        <span>profitguard.mhirisoftware.com</span>
+        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+      </a>
+    </div>
+
+    <div class="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-8 md:p-12 backdrop-blur-md relative overflow-hidden shadow-2xl">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        {/* Left Column: Product Narrative */}
+        <div class="lg:col-span-6 space-y-6">
+          <div class="flex items-center gap-4">
+            <img 
+              src="/icon_guard.jpg" 
+              alt="ProfitGuard Logo" 
+              class="w-14 h-14 rounded-2xl object-cover border border-neutral-700/80 shadow-lg shadow-black/50"
+            />
+            <div class="space-y-1">
+              <span class="inline-block px-2.5 py-0.5 rounded text-xs font-medium bg-neutral-800 text-neutral-200 border border-neutral-700/60 font-mono">
+                Production App Store Release
+              </span>
+              <p class="text-xs text-neutral-400 font-mono">Remix · Polaris · Prisma · BullMQ</p>
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white tracking-tight">
+            Stop hidden profit bleed before promotional discounts push margins into the red.
+          </h3>
+
+          <p class="text-neutral-300 text-sm leading-relaxed">
+            Shopify reports calculate gross margin while masking dimensional postage tiers, payment gateway cuts, and expected refund reserves. ProfitGuard models real-world unit economics for every variant and publishes 1-click price corrections directly to Shopify via GraphQL.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs mt-0.5">✓</div>
+              <p class="text-xs text-neutral-300 leading-normal"><strong class="text-white">Three-Tier Weight Matrix:</strong> Standardizes shipping deductions across light, standard, and heavy thresholds.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs mt-0.5">✓</div>
+              <p class="text-xs text-neutral-300 leading-normal"><strong class="text-white">1-Click Live Price Push:</strong> Updates Shopify variant prices instantly using targeted bulk mutations.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs mt-0.5">✓</div>
+              <p class="text-xs text-neutral-300 leading-normal"><strong class="text-white">Realized Drag Tracking:</strong> Calculates cumulative dollar loss by multiplying negative margins against units sold.</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a 
+              href="https://profitguard.mhirisoftware.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white hover:bg-neutral-200 text-neutral-950 font-semibold text-xs tracking-wide uppercase transition-all shadow-md hover:scale-[1.02] active:scale-[0.98]"
+            >
+              Launch Live Application
+            </a>
+          </div>
+        </div>
+
+        {/* Right Column: Live Interactive Margin Simulator */}
+        <div class="lg:col-span-6">
+          <div class="rounded-xl border border-neutral-800 bg-neutral-950/90 shadow-2xl p-6 font-mono text-xs relative overflow-hidden">
+            <div class="absolute inset-x-0 h-16 bg-gradient-to-b from-emerald-500/10 to-transparent pointer-events-none animate-scanline opacity-50"></div>
+
+            <div class="flex items-center justify-between border-b border-neutral-800 pb-3 mb-4 text-neutral-500">
+              <div class="flex items-center gap-2">
+                <span id="status-indicator" class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-pulse"></span>
+                <span class="text-neutral-200 font-semibold">SKU-78210 (1.4 kg Tier)</span>
+              </div>
+              <span id="status-badge" class="text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20 uppercase font-bold text-[11px]">
+                STATUS: CRITICAL
+              </span>
+            </div>
+
+            {/* Slider Control */}
+            <div class="mb-5 bg-neutral-900/60 p-3.5 rounded-lg border border-neutral-800/80">
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-neutral-400 text-xs font-semibold uppercase">Simulate Price Adjustment:</span>
+                <span id="slider-price-display" class="text-emerald-400 font-bold text-sm">$32.00</span>
+              </div>
+              <input 
+                id="price-slider" 
+                type="range" 
+                min="22" 
+                max="52" 
+                step="0.5" 
+                value="32" 
+                class="w-full accent-emerald-500 cursor-pointer h-1.5 bg-neutral-800 rounded-lg appearance-none"
+              />
+              <div class="flex justify-between text-[10px] text-neutral-500 mt-1">
+                <span>$22.00</span>
+                <span>Drag to identify breakeven floor</span>
+                <span>$52.00</span>
+              </div>
+            </div>
+
+            {/* Financial Ledger */}
+            <div class="space-y-2 text-neutral-400">
+              <div class="flex justify-between">
+                <span>Retail Price</span>
+                <span id="val-price" class="text-white font-bold">$32.00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>- Cost per item (COGS)</span>
+                <span class="text-rose-400">-$19.50</span>
+              </div>
+              <div class="flex justify-between">
+                <span>- Shipping Tier (0.5–2.0 kg)</span>
+                <span class="text-rose-400">-$6.00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>- Gateway Fee (2.9% + $0.25)</span>
+                <span id="val-fees" class="text-rose-400">-$1.18</span>
+              </div>
+              <div class="flex justify-between">
+                <span>- Return Reserve (3.0%)</span>
+                <span id="val-refund" class="text-rose-400">-$0.96</span>
+              </div>
+
+              <div class="border-t border-neutral-800 pt-3 mt-3 flex justify-between font-bold text-sm">
+                <span class="text-neutral-300">True Net Margin</span>
+                <span id="val-margin" class="text-rose-400">-$4.36 (-13.6%)</span>
+              </div>
+
+              <div class="border-t border-neutral-800/80 pt-3 flex justify-between text-neutral-500 text-[11px]">
+                <span>Sales Velocity: 84 units (30d)</span>
+                <span id="val-drag" class="text-rose-500 font-bold">Total Drag: -$366.24</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-neutral-800 flex items-center justify-between">
+              <span class="text-neutral-500 text-[11px]">Breakeven Floor: $38.50</span>
+              <span id="ready-badge" class="text-rose-400 text-[11px] bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20">
+                Loss-Making SKU
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {/* Services & Capabilities */}
+  <section id="services" class="max-w-6xl mx-auto px-6 py-20 border-t border-neutral-900">
+    <div class="max-w-2xl mb-12">
+      <span class="text-xs font-mono uppercase text-emerald-400 tracking-widest font-semibold">Specialized Capabilities</span>
+      <h2 class="text-3xl font-bold text-white tracking-tight mt-1">What We Build For Shopify Merchants & Founders</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-8 rounded-xl border border-neutral-800/80 bg-neutral-900/20 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-mono font-bold text-sm mb-6">
+            01
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Public Shopify App Products</h3>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            Full-cycle development from idea validation and Polaris UI design to billing API integration and passing the mandatory Shopify App Store review.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-neutral-800/80 text-[11px] font-mono text-neutral-500">
+          Remix · App Bridge v4 · Billing API
+        </div>
+      </div>
+
+      <div class="p-8 rounded-xl border border-neutral-800/80 bg-neutral-900/20 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-mono font-bold text-sm mb-6">
+            02
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Custom ERP, 3PL & Data Syncs</h3>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            High-volume custom private apps synchronizing catalog, pricing, and inventory states between internal ERPs and Shopify with zero downtime.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-neutral-800/80 text-[11px] font-mono text-neutral-500">
+          GraphQL Bulk Operations · Node.js
+        </div>
+      </div>
+
+      <div class="p-8 rounded-xl border border-neutral-800/80 bg-neutral-900/20 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-mono font-bold text-sm mb-6">
+            03
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Webhook Ingestion & Queues</h3>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            Bulletproof webhook listeners backed by BullMQ and Redis that prevent database connection exhaustion during flash sales and high-order surges.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-neutral-800/80 text-[11px] font-mono text-neutral-500">
+          BullMQ · Redis 7 · Idempotent Workers
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Technical Foundations (Bento Grid with Spotlight) */}
+  <section id="architecture" class="max-w-6xl mx-auto px-6 py-20 border-t border-neutral-900">
+    <div class="max-w-2xl mb-12">
+      <span class="text-xs font-mono uppercase text-emerald-400 tracking-widest font-semibold">Engineering Discipline</span>
+      <h2 class="text-3xl font-bold text-white tracking-tight mt-1">Architected for compliance, stability, and speed.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="spotlight-card p-8 rounded-xl border border-neutral-800/80 bg-neutral-900/20 flex flex-col justify-between hover:border-neutral-700 transition-colors">
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-mono font-bold text-sm mb-6">
+            A
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">GraphQL Rate-Limit Defense</h3>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            Continuously monitors Shopify's 50 pts/sec capacity bucket, backing off automatically before queries hit rate limits or trigger 429 throttling errors.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-neutral-800/80 text-[11px] font-mono text-neutral-500">
+          Admin API 2026 / Adaptive Backoff
+        </div>
+      </div>
+
+      <div class="spotlight-card p-8 rounded-xl border border-neutral-800/80 bg-neutral-900/20 flex flex-col justify-between hover:border-neutral-700 transition-colors">
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-mono font-bold text-sm mb-6">
+            B
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Zero-Liability Architecture</h3>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            By analyzing SKU line items without persisting merchant customer identities, we eliminate legal exposure and pass Shopify Partner privacy reviews effortlessly.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-neutral-800/80 text-[11px] font-mono text-neutral-500">
+          Data Minimization / Zero Customer PII
+        </div>
+      </div>
+
+      <div class="spotlight-card p-8 rounded-xl border border-neutral-800/80 bg-neutral-900/20 flex flex-col justify-between hover:border-neutral-700 transition-colors">
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-mono font-bold text-sm mb-6">
+            C
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Guaranteed GDPR Lifecycle</h3>
+          <p class="text-sm text-neutral-400 leading-relaxed">
+            All compliance webhooks (`customers/redact`, `shop/redact`) and uninstall events trigger automated background jobs to purge residual store data within 48 hours.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-neutral-800/80 text-[11px] font-mono text-neutral-500">
+          Mandatory Shopify Compliance Endpoints
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Client Consultation Section */}
+  <section class="max-w-6xl mx-auto px-6 py-20">
+    <div class="rounded-2xl border border-neutral-800 bg-gradient-to-b from-neutral-900/70 to-neutral-950 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+      <div class="space-y-2 text-center md:text-left z-10">
+        <h3 class="text-2xl font-bold text-white">Have a Shopify app or custom engineering project?</h3>
+        <p class="text-sm text-neutral-400 max-w-xl">
+          We partner with app founders, agencies, and Shopify Plus merchants to build robust, scalable applications that pass review on the first submission.
+        </p>
+      </div>
+      <a 
+        href="mailto:support@mhirisoftware.com" 
+        class="z-10 px-6 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-neutral-950 font-semibold text-sm transition-all whitespace-nowrap shadow-lg shadow-emerald-500/20 hover:scale-[1.02] active:scale-[0.98]"
+      >
+        Inquire via Email
+      </a>
+    </div>
+  </section>
+
+  {/* Interactive Script */}
+  <script is:inline>
+    const slider = document.getElementById('price-slider');
+    const priceDisplay = document.getElementById('slider-price-display');
+    const valPrice = document.getElementById('val-price');
+    const valFees = document.getElementById('val-fees');
+    const valRefund = document.getElementById('val-refund');
+    const valMargin = document.getElementById('val-margin');
+    const valDrag = document.getElementById('val-drag');
+    const statusBadge = document.getElementById('status-badge');
+    const statusIndicator = document.getElementById('status-indicator');
+    const readyBadge = document.getElementById('ready-badge');
+
+    const cogs = 19.50;
+    const shipping = 6.00;
+    const units = 84;
+
+    function recalculate() {
+      if (!slider) return;
+      const price = parseFloat(slider.value);
+      const fees = (price * 0.029) + 0.25;
+      const refund = price * 0.03;
+      const netMargin = price - (cogs + shipping + fees + refund);
+      const netMarginPct = (netMargin / price) * 100;
+      const totalLost = netMargin < 0 ? Math.abs(netMargin * units) : 0;
+
+      priceDisplay.textContent = `$${price.toFixed(2)}`;
+      valPrice.textContent = `$${price.toFixed(2)}`;
+      valFees.textContent = `-$${fees.toFixed(2)}`;
+      valRefund.textContent = `-$${refund.toFixed(2)}`;
+
+      const sign = netMargin >= 0 ? '+' : '-';
+      valMargin.textContent = `${sign}$${Math.abs(netMargin).toFixed(2)} (${netMarginPct.toFixed(1)}%)`;
+
+      if (netMargin < 0) {
+        valMargin.className = "text-rose-400 font-bold";
+        valDrag.textContent = `Total Drag: -$${totalLost.toFixed(2)}`;
+        valDrag.className = "text-rose-500 font-bold";
+        statusBadge.textContent = "STATUS: CRITICAL";
+        statusBadge.className = "text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20 uppercase font-bold text-[11px]";
+        statusIndicator.className = "w-2.5 h-2.5 rounded-full bg-rose-500 animate-pulse";
+        readyBadge.textContent = "Loss-Making SKU";
+        readyBadge.className = "text-rose-400 text-[11px] bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20";
+      } else if (netMarginPct < 15) {
+        valMargin.className = "text-amber-400 font-bold";
+        valDrag.textContent = "Protected (Thin Margin Reserve)";
+        valDrag.className = "text-amber-400 font-bold";
+        statusBadge.textContent = "STATUS: WARNING";
+        statusBadge.className = "text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20 uppercase font-bold text-[11px]";
+        statusIndicator.className = "w-2.5 h-2.5 rounded-full bg-amber-400";
+        readyBadge.textContent = "Approaching Floor";
+        readyBadge.className = "text-amber-400 text-[11px] bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20";
+      } else {
+        valMargin.className = "text-emerald-400 font-bold";
+        valDrag.textContent = `Protected Yield: +$${(netMargin * units).toFixed(2)}`;
+        valDrag.className = "text-emerald-400 font-bold";
+        statusBadge.textContent = "STATUS: HEALTHY";
+        statusBadge.className = "text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 uppercase font-bold text-[11px]";
+        statusIndicator.className = "w-2.5 h-2.5 rounded-full bg-emerald-400";
+        readyBadge.textContent = "Safe for Discounts";
+        readyBadge.className = "text-emerald-400 text-[11px] bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20";
+      }
+    }
+
+    slider?.addEventListener('input', recalculate);
+
+    const cards = document.querySelectorAll('.spotlight-card');
+    cards.forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+      });
+    });
+  </script>
+</Layout>
